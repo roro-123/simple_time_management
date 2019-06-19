@@ -17,8 +17,11 @@ from django.conf.urls import url
 from django.contrib import admin
 from simple_time_management.forms import LoginForm
 from django.contrib.auth import views as auth_views
+from simple_time_management import views 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^login/', auth_views.login, {'authentication_form':LoginForm}),
+    url(r'^signup/$', views.signup, name = 'signup'),
+
 ]
