@@ -54,7 +54,7 @@ ROOT_URLCONF = 'simple_time_management.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['simple_time_management'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
